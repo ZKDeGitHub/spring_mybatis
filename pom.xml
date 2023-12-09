@@ -13,28 +13,34 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
+        <!--spring依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.2.10.RELEASE</version>
         </dependency>
+        <!--Resouces注解需要的依赖-->
         <dependency>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
             <version>1.2</version>
         </dependency>
 
+        <!--mybatis主要依赖-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.5.4</version>
         </dependency>
+
+        <!--使用lombok注解需要的依赖-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
         </dependency>
 
+        <!--mybatis与spring集成的相关实现类的依赖-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
@@ -42,23 +48,27 @@
         </dependency>
 
 
+        <!--获取数据库连接需要依赖-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.22</version>
         </dependency>
 
+        <!--数据库连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.2.14</version>
         </dependency>
 
+        <!--spring集成单元测试的依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>5.2.10.RELEASE</version>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -66,13 +76,26 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- spring 整合数据源 依赖-->
+        <!-- spring 整合数据源 需要的依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>5.2.10.RELEASE</version>
         </dependency>
 
+        <!-- AOP（aspect）的使用依赖  -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+
+        <!--  spring结合事务的依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>5.2.10.RELEASE</version>
+        </dependency>
 
     </dependencies>
 

@@ -25,7 +25,7 @@ public class UserServiceImplTest {
 
     @Test
     public void add() {
-        userService.addUser(new User(10011L, "诸葛亮", LocalDate.now(), "男", "周口的"));
+        userService.addUser(new User(10012L, "诸葛亮", LocalDate.now(), "男", "周口的"));
     }
 
     @Test
